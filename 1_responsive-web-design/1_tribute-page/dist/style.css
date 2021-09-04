@@ -1,0 +1,80 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --fig-bg: #fff;
+  --link-fg: #2aa;
+  --main-bg: #eee;
+  --book-year-fg: #777;
+}
+
+#main {
+  width: 100vw;
+  min-height: 100vh;
+  padding: 20px 10px;
+  background-color: var(--main-bg);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+a {
+  display: inline-block;
+  color: var(--link-fg);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline dotted;
+}
+
+#subtitle {
+  --subtitle-fg: #555;
+  color: var(--subtitle-fg);
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+#img-div {
+  max-width: min(100vw, 400px);
+  padding: 10px;
+  background-color: var(--fig-bg);
+  box-shadow: 0 2px 7px #0003;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#img-div img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+#img-div #img-caption {
+  font-size: 14px;
+}
+
+#tribute-info {
+  padding: 20px 0;
+}
+
+.book-list {
+  list-style: discs;
+  text-align: left;
+  margin: 15px 0;
+}
+.book-list .item {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.book-list .year {
+  font-weight: bold;
+  color: var(--book-year-fg);
+}
