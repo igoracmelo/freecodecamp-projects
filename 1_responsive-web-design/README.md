@@ -8,3 +8,6 @@
 
 ### [3 - Product Landing Page](https://codepen.io/igoracmelo/full/eYRNraK)
 ![image](https://user-images.githubusercontent.com/85039990/133941760-4a64577d-faaf-4dce-83aa-0ac8d37093a4.png)
+
+### [4 - Technical Documentation Page](https://codepen.io/igoracmelo/full/ZEyGRQM)
+![image](https://user-images.githubusercontent.com/85039990/133946179-6ae59f45-4f8b-444b-a5c1-b2659f13b151.png)
