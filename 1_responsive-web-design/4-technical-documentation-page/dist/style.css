@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-p: 3.5rem;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  width: 100vw;
+  overflow-x: hidden;
+  display: flex;
+  gap: 2rem;
+  color: #fff;
+  background-color: #132;
+}
+body > * {
+  padding: var(--main-p);
+}
+
+#navbar {
+  flex: 1 1 25vw;
+  position: relative;
+  background-color: #2433;
+}
+#navbar .container {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#navbar header {
+  font-weight: bold;
+  font-size: 18px;
+}
+#navbar .nav-link {
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #def;
+}
+
+#main-doc {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#main-doc .main-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+#main-doc header {
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+#main-doc p {
+  line-height: 150%;
+  word-wrap: break-word;
+  max-width: 70ch;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+code {
+  align-self: flex-start;
+  padding: 1rem;
+  background-color: #254;
+  white-space: pre-line;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+code.term::before {
+  content: "you@pc:~$ ";
+  color: #fff5;
+}
+
+@media (max-width: 1050px) {
+  :root {
+    font-size: 55%;
+    --main-p: 1.7rem;
+  }
+}
+@media (max-width: 850px) {
+  :root {
+    font-size: 50%;
+  }
+}
+@media (max-width: 850px) {
+  body {
+    flex-direction: column;
+  }
+
+  #navbar .container {
+    position: static;
+  }
+}
